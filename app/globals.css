@@ -5,6 +5,7 @@
 
 @theme inline {
   --color-rashii-green: #3FB65B;
+  --color-primary-rashii-green: #57AE73;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);

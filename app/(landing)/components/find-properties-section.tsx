@@ -10,8 +10,9 @@ const properties = Array(6)
     price: "$2,000",
     location: "20-30 Steinway St Dubai",
     description: "Newly 3 bed room bungalow available at giveaway price well furnished with furniture",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://firebasestorage.googleapis.com/v0/b/website-directory-959bd.firebasestorage.app/o/rashii-images%2Flisting-card.jpg?alt=media&token=800bac70-1754-49d0-8df2-99671eb48140",
     tags: ["Top Pick", "8 Bungalow left"],
+    propertyType: 'bungalow'
   }))
 
 export function FindPropertiesSection() {
@@ -40,7 +41,8 @@ export function FindPropertiesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {properties.map((property) => (
-            <PropertyCard key={property.id} {...property} />
+            <PropertyCard key={property.id} 
+            {...property} />
           ))}
         </div>
       </div>

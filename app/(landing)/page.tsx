@@ -1,4 +1,3 @@
-import { Header } from "./components/header"
 import { HeroSection } from "./components/hero-section"
 import { FeaturedProperties } from "./components/featured-properties"
 import { FindPropertiesSection } from "./components/find-properties-section"

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export function BecomeOwnerSection() {
   return (
@@ -7,11 +8,14 @@ export function BecomeOwnerSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
-            <img
-              src="/placeholder.svg?height=500&width=600"
-              alt="Hands holding house keys"
-              className="w-full h-auto rounded-2xl shadow-lg"
-            />
+            <div className="relative w-full h-[500px]">
+              <Image
+                src="/hand-keys.jpg"
+                alt="Hands holding house keys"
+                fill
+                className="object-cover rounded-2xl shadow-lg"
+              />
+            </div>
           </div>
 
           <div className="lg:w-1/2 lg:pl-8">
